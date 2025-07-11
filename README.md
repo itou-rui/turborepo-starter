@@ -58,6 +58,11 @@ purposes:
 - **Description**: Shared TypeScript configurations.
 - **Details**: Refer to [tsconfig README](packages/tsconfig/README.md).
 
+### ESLint Configurations
+
+- **Description**: Linting configurations for various frameworks.
+- **Details**: Refer to [eslint README](packages/eslint/README.md).
+
 ## Commit Rules
 
 We follow strict commit message guidelines to ensure clarity and traceability.
