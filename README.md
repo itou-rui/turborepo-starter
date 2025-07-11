@@ -73,6 +73,11 @@ purposes:
 - **Description**: Testing configurations for unit and integration tests.
 - **Details**: Refer to [jest README](packages/jest/README.md).
 
+### UI Configurations
+
+- **Description**: Common UI package.
+- **Details**: Refer to [ui README](packages/ui/README.md).
+
 ## Commit Rules
 
 We follow strict commit message guidelines to ensure clarity and traceability.
