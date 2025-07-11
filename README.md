@@ -8,6 +8,7 @@ practices and curated configurations.
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Internal Packages](#internal-packages)
 - [Commit Rules](#commit-rules)
 
 ## Installation
@@ -46,6 +47,16 @@ yarn commit
 
 This README consolidates all relevant information for contributors and
 developers working on this repository.
+
+## Internal Packages
+
+This repository contains several internal packages tailored for specific
+purposes:
+
+### TypeScript Configurations
+
+- **Description**: Shared TypeScript configurations.
+- **Details**: Refer to [tsconfig README](packages/tsconfig/README.md).
 
 ## Commit Rules
 
