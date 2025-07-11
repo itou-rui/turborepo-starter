@@ -63,6 +63,11 @@ purposes:
 - **Description**: Linting configurations for various frameworks.
 - **Details**: Refer to [eslint README](packages/eslint/README.md).
 
+### Prettier Configurations
+
+- **Description**: Formatting rules for consistent code style.
+- **Details**: Refer to [prettier README](packages/prettier/README.md).
+
 ## Commit Rules
 
 We follow strict commit message guidelines to ensure clarity and traceability.
