@@ -68,6 +68,11 @@ purposes:
 - **Description**: Formatting rules for consistent code style.
 - **Details**: Refer to [prettier README](packages/prettier/README.md).
 
+### Jest Configurations
+
+- **Description**: Testing configurations for unit and integration tests.
+- **Details**: Refer to [jest README](packages/jest/README.md).
+
 ## Commit Rules
 
 We follow strict commit message guidelines to ensure clarity and traceability.
