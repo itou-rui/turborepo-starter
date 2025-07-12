@@ -9,6 +9,7 @@ practices and curated configurations.
 - [Installation](#installation)
 - [Usage](#usage)
 - [Internal Packages](#internal-packages)
+- [Branch Strategy](#branch-strategy)
 - [Commit Rules](#commit-rules)
 
 ## Installation
@@ -77,6 +78,11 @@ purposes:
 
 - **Description**: Common UI package.
 - **Details**: Refer to [ui README](packages/ui/README.md).
+
+## Branch Strategy
+
+Refer to the [branch strategy](docs/branch-strategy.md) for detailed workflows,
+branch descriptions, and merge methods.
 
 ## Commit Rules
 

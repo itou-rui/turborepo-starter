@@ -8,10 +8,28 @@ the project's history.
 
 The commit message must adhere to the following structure:
 
-```
+```gitcommit
 <type>(<scope>): <subject>
 
 <body>
+
+<footer>
+```
+
+## Squash Merge Commit Format
+
+```gitcommit
+<type>(<scope>): <subject>(#<pull_request_number>)
+
+<body>
+
+---
+<username> --> <type>(<scope>): <subject>
+OR
+<username> --> <type>(<scope>): <subject>(#<pull_request_number>)
+
+...<Include all other related commits>
+---
 
 <footer>
 ```
