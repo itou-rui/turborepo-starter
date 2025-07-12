@@ -1,7 +1,7 @@
-# Fullstack Starter
+# Turborepo Starter
 
-Welcome to the Fullstack Starter repository! This project serves as a
-boilerplate to streamline the development of fullstack applications with best
+Welcome to the Turborepo Starter repository! This project serves as a
+boilerplate to streamline the development of Turborepo applications with best
 practices and curated configurations.
 
 ## Contents
