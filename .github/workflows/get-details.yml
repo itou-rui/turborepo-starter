@@ -10,9 +10,9 @@ on:
       project_name:
         value: ${{ jobs.get-project.outputs.name }}
       apps:
-        value: ${{ jobs.get-apps.details }}
+        value: ${{ jobs.get-apps.outputs.details }}
       repository:
-        value: ${{ jobs.get-repository.details }}
+        value: ${{ jobs.get-repository-details.outputs.details }}
 
 jobs:
   #############################################################################
