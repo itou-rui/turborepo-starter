@@ -97,11 +97,16 @@ jobs:
       - name: Generate repository details
         id: generate-repo-details
         run: |
-          details=$(jq -n --arg repo_name "$repo_name" --arg repo_name_lowercase "$repo_name_lowercase" \
-            --arg repo_owner "$repo_owner" --arg repo_owner_lowercase "$repo_owner_lowercase" \
-            --arg ref_name "$ref_name" --arg ref_name_lowercase "$ref_name_lowercase" \
-            '{repo_name: $repo_name, repo_name_lowercase: $repo_name_lowercase, \
-              repo_owner: $repo_owner, repo_owner_lowercase: $repo_owner_lowercase, \
-              ref_name: $ref_name, ref_name_lowercase: $ref_name_lowercase}')
+          details=$(jq --arg repo_name "$repo_name" \
+            --arg repo_name_lowercase "$repo_name_lowercase" \
+            --arg repo_owner "$repo_owner" \
+            --arg repo_owner_lowercase "$repo_owner_lowercase" \
+            '{ 
+                "repo_name": $repo_name, 
+                "repo_name_lowercase": $repo_name_lowercase, 
+                "repo_owner": $repo_owner, 
+                "repo_owner_lowercase": $repo_owner_lowercase 
+            }'
+          )
 
           echo "details=$details" >> $GITHUB_OUTPUT
