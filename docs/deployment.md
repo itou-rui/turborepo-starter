@@ -20,6 +20,11 @@ GOOGLE_CLOUD_IDENTITY_PROVIDER_ID=
 
 3. Run [Setup Script](../scripts/setup-google-cloud.sh).
 
+> [!NOTE]
+>
+> If a permission error occurs, run `chmod +x ./scripts/setup-google-cloud.sh`
+> to grant execution permissions to the script.
+
 4. Set the following environment variables in Github.
    - **Environment**:
      - `GOOGLE_CLOUD_PROJECT_ID `
