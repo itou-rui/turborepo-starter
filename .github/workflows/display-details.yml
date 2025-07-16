@@ -27,4 +27,5 @@ jobs:
         run: |
           echo "Project Name: ${{ needs.execute-get-details.outputs.project_name }}"
           echo "Apps Details: ${{ needs.execute-get-details.outputs.apps }}"
+          echo "App Details by name: ${{ needs.execute-get-details.outputs.apps_by_name }}"
           echo "Repository Information: ${{ needs.execute-get-details.outputs.repository }}"
