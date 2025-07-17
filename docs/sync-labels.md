@@ -34,7 +34,8 @@ This allows the project to be managed more efficiently and systematically.
 
 > [!WARNING]
 >
-> Note that deleting labels defined as `Version Resolver` may cause automatic
+> Note that deleting labels defined as
+> [Version Resolver](/docs/releases.md#version-resolver) may cause automatic
 > releases to malfunction.
 
 ## Synchronizing Defined Labels
