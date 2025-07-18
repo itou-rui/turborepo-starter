@@ -119,7 +119,7 @@ jobs:
         uses: google-github-actions/deploy-cloudrun@v2
         timeout-minutes: 5
         with:
-          service: ${{ steps.setup-vars.outputs.service_name }}-${{ inputs.environment }}
+          service: ${{ inputs.project_name }}-${{ inputs.app_name }}-${{ inputs.environment }}
           region: ${{ vars.GOOGLE_CLOUD_REGION }}
           metadata: service-${{ inputs.environment }}.yaml
           project_id: ${{ secrets.GOOGLE_CLOUD_PROJECT_ID }}
