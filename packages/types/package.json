@@ -9,6 +9,7 @@
     "@workspace/tsconfig": "*"
   },
   "exports": {
-    "./web": "./src/web/index.ts"
+    "./web": "./src/web/index.ts",
+    "./api": "./src/api/index.ts"
   }
 }
