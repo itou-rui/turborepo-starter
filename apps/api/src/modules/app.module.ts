@@ -4,6 +4,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { CONFIG_DATABASE, DatabaseConfig, databaseConfig } from '../config/database.config';
 import { validationSchemaForEnv } from '../config/env-validation';
+import { UsersModule } from './users';
 
 @Module({
   imports: [
@@ -34,6 +35,7 @@ import { validationSchemaForEnv } from '../config/env-validation';
       },
       inject: [ConfigService],
     }),
+    UsersModule,
   ],
 })
 export class AppModule {}
