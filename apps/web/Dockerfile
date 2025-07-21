@@ -1,7 +1,7 @@
 FROM node:20-alpine AS builder
-RUN apk update
 
 # Set working directory
+RUN apk update && apk add --no-cache libc6-compat
 WORKDIR /app
 
 RUN yarn global add turbo
@@ -13,7 +13,6 @@ RUN turbo prune --scope=web --docker
 
 # Add lockfile and package.json's of isolated subworkspace
 FROM node:20-alpine AS installer
-RUN apk add --no-cache libc6-compat
 
 WORKDIR /app
 
