@@ -88,6 +88,8 @@ jobs:
 
       - name: Create Service declaration
         run: |
+          SERVICE="${{ inputs.app_name }}-${{ inputs.environment }}"
+
           ## Environment variables specific to `apps/web`
           if [ "${{ inputs.app_name }}" == "web" ]; then
             if [ "${{ inputs.environment }}" == "production" ]; then
@@ -95,6 +97,7 @@ jobs:
             else
               export BASE_URL="https://dev.${{ vars.DOMAIN }}"
             fi
+              export CLOUD_RUN_API_SERVICE_URL="https://$SERVICE-${{ secrets.GOOGLE_CLOUD_PROJECT_NUMBER }}-${{ vars.GOOGLE_CLOUD_REGION }}.run.app"
           fi
 
           ## NOTE: ...increase as `apps/**` is added
