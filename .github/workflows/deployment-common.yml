@@ -100,6 +100,15 @@ jobs:
               export CLOUD_RUN_API_SERVICE_URL="https://$SERVICE-${{ secrets.GOOGLE_CLOUD_PROJECT_NUMBER }}-${{ vars.GOOGLE_CLOUD_REGION }}.run.app"
           fi
 
+          ## Environment variables specific to `apps/api`
+          if [ "${{ inputs.app_name }}" == "api" ]; then
+              export BASE_URL="https://$SERVICE-${{ secrets.GOOGLE_CLOUD_PROJECT_NUMBER }}-${{ vars.GOOGLE_CLOUD_REGION }}.run.app"
+              export MONGODB_USER_NAME="${{ secrets.MONGODB_USER_NAME }}"
+              export MONGODB_USER_PASSWORD="${{ secrets.MONGODB_USER_PASSWORD }}"
+              export MONGODB_HOST_NAME="${{ secrets.MONGODB_HOST_NAME }}"
+              export JWT_SECRET="${{ secrets.JWT_SECRET }}"
+          fi
+
           ## NOTE: ...increase as `apps/**` is added
 
           ## Common environment variables by mode
