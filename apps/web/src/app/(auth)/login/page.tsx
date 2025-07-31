@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@workspace/ui/components/card';
-import { DiscordLoginButton } from './components';
+import { LocalAuthLoginForm, DiscordLoginButton } from './components';
 
 export default async function LoginPage() {
   return (
@@ -19,6 +19,7 @@ export default async function LoginPage() {
                 <span className='relative z-10 bg-background px-2 text-muted-foreground'>Or continue with</span>
               </div>
             </div>
+            <LocalAuthLoginForm />
           </div>
         </CardContent>
       </Card>
