@@ -35,6 +35,11 @@ const UnknownGuild = {
   notice: 'The specified Discord server could not be found.',
 } as const;
 
+const UnknownRole = {
+  log: 'A role that does not exist in the `RoleDocument` was specified.',
+  notice: 'The specified role could not be found.',
+} as const;
+
 const AlreadyAccount = {
   log: 'The specified account already exists in the `UserDocument`, so the creation failed.',
   notice: 'The specified account already exists.',
@@ -77,6 +82,7 @@ export const ErrorMessage: Record<ErrorCode, ErrorMessage> = {
   [ErrorCode.MaximumRetryAttemptsExceeded]: MaximumRetryAttemptsExceeded,
   [ErrorCode.UnknownAccount]: UnknownAccount,
   [ErrorCode.UnknownGuild]: UnknownGuild,
+  [ErrorCode.UnknownRole]: UnknownRole,
   [ErrorCode.AlreadyAccount]: AlreadyAccount,
   [ErrorCode.AlreadyGuild]: AlreadyGuild,
   [ErrorCode.AlreadyRole]: AlreadyRole,

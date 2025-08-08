@@ -13,3 +13,9 @@ export class GuildNotFoundException extends NotFoundAPIException {
     super(ErrorCode.UnknownGuild, `Guild with ID ${guildId} not found.`, errors);
   }
 }
+
+export class RoleNotFoundException extends NotFoundAPIException {
+  constructor(roleId: string, errors?: RESTErrorData) {
+    super(ErrorCode.UnknownRole, `Role with ID ${roleId} not found.`, errors);
+  }
+}
