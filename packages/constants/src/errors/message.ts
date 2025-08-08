@@ -45,6 +45,11 @@ const AlreadyGuild = {
   notice: 'The specified Discord server already exists.',
 } as const;
 
+const AlreadyCommand = {
+  log: 'The specified Command already exists in the `CommandDocument`, so the creation failed.',
+  notice: 'The specified command already exists.',
+} as const;
+
 const InvalidEmail = {
   log: 'The specified email address is invalid.',
   notice: 'The specified email address is invalid.',
@@ -69,6 +74,7 @@ export const ErrorMessage: Record<ErrorCode, ErrorMessage> = {
   [ErrorCode.UnknownGuild]: UnknownGuild,
   [ErrorCode.AlreadyAccount]: AlreadyAccount,
   [ErrorCode.AlreadyGuild]: AlreadyGuild,
+  [ErrorCode.AlreadyCommand]: AlreadyCommand,
   [ErrorCode.InvalidEmail]: InvalidEmail,
   [ErrorCode.InvalidPassword]: InvalidPassword,
   [ErrorCode.MissingUserPassword]: MissingUserPassword,

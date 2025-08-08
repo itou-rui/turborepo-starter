@@ -13,3 +13,9 @@ export class AlreadyGuildExistsException extends ConflictAPIException {
     super(ErrorCode.AlreadyGuild, `Guild with ${property} already exists.`, errors);
   }
 }
+
+export class AlreadyCommandExistsException extends ConflictAPIException {
+  constructor(property: string, errors?: RESTErrorData) {
+    super(ErrorCode.AlreadyCommand, `Command with ${property} already exists.`, errors);
+  }
+}
