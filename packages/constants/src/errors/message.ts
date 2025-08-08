@@ -30,9 +30,15 @@ const UnknownAccount = {
   notice: 'The specified account could not be found.',
 } as const;
 
+
 const AlreadyAccount = {
   log: 'The specified account already exists in the `UserDocument`, so the creation failed.',
   notice: 'The specified account already exists.',
+} as const;
+
+const AlreadyGuild = {
+  log: 'The specified DiscordServer already exists in the `GuildDocument`, so the creation failed.',
+  notice: 'The specified Discord server already exists.',
 } as const;
 
 const InvalidEmail = {
@@ -57,6 +63,7 @@ export const ErrorMessage: Record<ErrorCode, ErrorMessage> = {
   [ErrorCode.MaximumRetryAttemptsExceeded]: MaximumRetryAttemptsExceeded,
   [ErrorCode.UnknownAccount]: UnknownAccount,
   [ErrorCode.AlreadyAccount]: AlreadyAccount,
+  [ErrorCode.AlreadyGuild]: AlreadyGuild,
   [ErrorCode.InvalidEmail]: InvalidEmail,
   [ErrorCode.InvalidPassword]: InvalidPassword,
   [ErrorCode.MissingUserPassword]: MissingUserPassword,
