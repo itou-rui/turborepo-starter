@@ -14,6 +14,12 @@ export class AlreadyGuildExistsException extends ConflictAPIException {
   }
 }
 
+export class AlreadyRoleExistsException extends ConflictAPIException {
+  constructor(property: string, errors?: RESTErrorData) {
+    super(ErrorCode.AlreadyRole, `Role with ${property} already exists.`, errors);
+  }
+}
+
 export class AlreadyCommandExistsException extends ConflictAPIException {
   constructor(property: string, errors?: RESTErrorData) {
     super(ErrorCode.AlreadyCommand, `Command with ${property} already exists.`, errors);

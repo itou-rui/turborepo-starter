@@ -11,6 +11,7 @@ export enum ErrorCode {
   // 20000-20999: Registration Related
   AlreadyAccount = 20001,
   AlreadyGuild,
+  AlreadyRole,
   AlreadyCommand,
 
   // 30000-30999: Authentication Related
