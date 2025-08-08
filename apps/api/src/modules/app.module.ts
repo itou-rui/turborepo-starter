@@ -7,6 +7,7 @@ import { validationSchemaForEnv } from '../config/env-validation';
 import { UsersModule } from './users';
 import { AuthModule } from './auth';
 import { DiscordModule } from './discord';
+import { GuildsModule } from './guilds';
 
 @Module({
   imports: [
@@ -62,6 +63,7 @@ import { DiscordModule } from './discord';
     UsersModule,
     AuthModule,
     DiscordModule,
+    GuildsModule,
   ],
 })
 export class AppModule {}
