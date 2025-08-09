@@ -18,7 +18,7 @@ describe('GuildsController', () => {
   const mockGuildsService = {
     findAll: jest.fn(),
     findOne: jest.fn(),
-    createOne: jest.fn(),
+    create: jest.fn(),
     toAPIGuild: jest.fn(),
   };
 
@@ -79,12 +79,12 @@ describe('GuildsController', () => {
         name: 'New Guild',
       };
 
-      mockGuildsService.createOne.mockResolvedValue(mockGuild);
+      mockGuildsService.create.mockResolvedValue(mockGuild);
       mockGuildsService.toAPIGuild.mockReturnValue(mockGuild);
 
       const result = await controller.create(createGuildDto);
 
-      expect(service.createOne).toHaveBeenCalledWith(createGuildDto);
+      expect(service.create).toHaveBeenCalledWith([createGuildDto]);
       expect(result).toEqual(mockGuild);
     });
   });
