@@ -40,6 +40,9 @@ module.exports = {
     start: {
       web: "docker compose -f docker-compose.web.yml up --build",
     },
-    dev: "npx turbo run dev",
+    dev: {
+      default: "npx turbo run dev",
+      web: "npx turbo run dev --filter=web",
+    },
   },
 };
