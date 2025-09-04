@@ -1,0 +1,19 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": ["apps/*/AGENTS.md", "docs/guildelines/*.md"],
+  "permission": {
+    "edit": "ask",
+    "bash": {
+      "sudo *": "deny",
+      "wget *": "deny",
+      "dd *": "deny",
+      ":(){ :|:& }; *": "deny",
+      "git add *": "deny",
+      "git diff *": "allow",
+      "git status *": "allow",
+      "git log *": "allow",
+      "*": "ask"
+    }
+  },
+  "autoupdate": true
+}
