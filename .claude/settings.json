@@ -1,6 +1,0 @@
-{
-  "permissions": {
-    "allow": ["Bash(nps:*)"],
-    "deny": ["Bash(curl:*)", "Bash(git:*)"]
-  }
-}
