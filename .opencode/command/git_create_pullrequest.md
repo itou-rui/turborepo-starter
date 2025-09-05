@@ -3,9 +3,10 @@ description: Create a pull request ($ARGUMENTS is base branch name)
 agent: build
 ---
 
-Pay attention to the following points and use the `gh pr create *` command to
-create a pull request from the branch given by
-!`git rev-parse --abbrev-ref HEAD` to $ARGUMENTS in the repository shown by
+Pay close attention to the following points, and use the `gh pr create *`
+command to create a pull request from the branch given by
+!`git rev-parse --abbrev-ref HEAD` (the source/head branch) into $ARGUMENTS (the
+target/base branch) in the repository shown by
 !`gh repo view -q ".owner.login + \"/\" + .name" --json name,owner`.
 
 **Rules**:
