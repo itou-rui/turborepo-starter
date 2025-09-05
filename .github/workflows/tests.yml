@@ -78,11 +78,11 @@ jobs:
             ${{ runner.os }}-yarn-
       - run: yarn global add turbo
       - name: Prepare
-        if: matrix.run == 'true'
+        if: matrix.run
         run: npx nps prepare.ci.${{ matrix.target }}
       - name: Build
-        if: matrix.run == 'true'
+        if: matrix.run
         run: npx nps build.ci.${{ matrix.target }}
       - name: Test
-        if: matrix.run == 'true'
+        if: matrix.run
         run: npx nps test.ci.${{ matrix.target }}
