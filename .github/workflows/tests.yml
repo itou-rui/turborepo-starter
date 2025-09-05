@@ -55,7 +55,7 @@ jobs:
       - run: yarn install --frozen-lockfile
 
   test:
-    needs: setup
+    needs: [setup, changes]
     runs-on: ubuntu-latest
     if: needs.setup.result == 'success'
     strategy:
