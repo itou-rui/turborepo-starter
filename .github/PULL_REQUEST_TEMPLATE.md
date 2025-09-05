@@ -37,15 +37,19 @@ Describe the changes in the following format:
 
 ## Testing
 
-<!-- Describe the testing performed -->
+<details>
+  <summary>nps docker.build</summary>
+  <!-- 
+    ... Build log 
+  -->
+</details>
 
-### Build/Test
-
-- [ ] `nps build` completes successfully
-- [ ] `nps docker.build` completes successfully
-- [ ] `nps test` passes
-
-
+<details>
+  <summary>nps test</summary>
+  <!-- 
+    ... Test log 
+  -->
+</details>
 
 ## Screenshots
 
