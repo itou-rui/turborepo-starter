@@ -69,6 +69,7 @@ purposes:
 | [eslint](packages/eslint/README.md)       | Linting configurations for various frameworks.         |
 | [prettier](packages/prettier/README.md)   | Formatting rules for consistent code style.            |
 | [jest](packages/jest/README.md)           | Testing configurations for unit and integration tests. |
+| [vitest](packages/vitest/README.md)       | Testing configurations for unit and integration tests. |
 | [ui](packages/ui/README.md)               | Common UI package.                                     |
 | [types](packages/types/README.md)         | Common types package.                                  |
 | [constants](packages/constants/README.md) | Common constants package.                              |
