@@ -1,13 +1,3 @@
-# Rules
-
-1. Please fill in (select) all required fields.
-
-2. To reduce the burden on the reader, please cooperate with the following
-   formatting:
-   - Emphasize important changes with **bold**
-   - Enclose code blocks with ```
-   - Use bullet points for long lists
-
 ## Overview (Required)
 
 <!-- Briefly describe the changes -->
