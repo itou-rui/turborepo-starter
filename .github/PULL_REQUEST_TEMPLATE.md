@@ -1,8 +1,8 @@
-## Overview (Required)
+## Overview
 
 <!-- Briefly describe the changes -->
 
-## Changes (Required)
+## Changes
 
 <!--
 Describe the changes in the following format:
@@ -16,17 +16,17 @@ Describe the changes in the following format:
   - Effect of the fix
 -->
 
+## Breaking Changes
 
-## Breaking Changes (Required)
 
 - [ ] Yes (Describe details below)
 - [ ] No
 
 <!-- If yes, describe the countermeasures -->
 
-## Impact Scope (Required)
 
 <!-- Describe the impact of this Pull Request -->
+## Impact Scope
 
 - [ ] UI changes
 - [ ] Database changes
