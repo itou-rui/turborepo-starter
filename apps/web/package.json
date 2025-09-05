@@ -8,9 +8,6 @@
     "analyze-bundle": "ANALYZE=true next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:ci": "jest --ci"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.4.0",
@@ -32,7 +29,6 @@
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@workspace/eslint": "*",
-    "@workspace/jest": "*",
     "@workspace/prettier": "*",
     "@workspace/tsconfig": "*",
     "@workspace/types": "*",
