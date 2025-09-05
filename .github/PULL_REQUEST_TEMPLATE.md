@@ -18,14 +18,9 @@ Describe the changes in the following format:
 
 ## Breaking Changes
 
-
-- [ ] Yes (Describe details below)
+- [ ] Yes
 - [ ] No
 
-<!-- If yes, describe the countermeasures -->
-
-
-<!-- Describe the impact of this Pull Request -->
 ## Impact Scope
 
 - [ ] UI changes
