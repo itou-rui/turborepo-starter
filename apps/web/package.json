@@ -8,6 +8,9 @@
     "analyze-bundle": "ANALYZE=true next build",
     "start": "next start",
     "lint": "next lint",
+    "test": "vitest run",
+    "test:watch": "vitest --watch",
+    "test:ci": "vitest run"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.4.0",
@@ -31,6 +34,7 @@
     "@workspace/eslint": "*",
     "@workspace/prettier": "*",
     "@workspace/tsconfig": "*",
+    "@workspace/vitest": "*",
     "@workspace/types": "*",
     "copy-webpack-plugin": "^12.0.2",
     "jest-environment-jsdom": "^29.6.2",
