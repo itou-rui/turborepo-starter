@@ -1,6 +1,7 @@
-import { render, screen, act } from '../jest.setup';
-import '@testing-library/jest-dom';
+import type { ReactElement } from 'react';
+import '@testing-library/dom';
 import LandingPage from '../../app/(lp)/page';
+import { render, screen, act, waitFor } from '../testUtils';
 
 describe('LandingPage', () => {
   it('renders the LandingPage correctly', async function () {
